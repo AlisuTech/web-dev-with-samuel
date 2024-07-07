@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML with CSS</title>
+</head>
+<style>
+    .visual{
+        font-size: larger;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+        font-style: oblique;
+    }
+    #description{
+        text-align: left;
+        /* text-decoration: overline underline line-through; */
+        text-transform: uppercase;
+        text-overflow: ellipsis;
+        text-shadow: 1px 1px blue;
+        text-decoration-line: underline;
+        text-decoration-color: red;
+        text-wrap: pretty;
+    }
+    .visual-two{
+        color: blue;
+        background-color: lawngreen;
+    }
+    .div-image{
+        background-image: url('../resources/resource_img.jpeg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        /* auto - Exact Image Size, Contain - Expands the image to fill the container but maintains the aspect ratio, cover - Fills entire container, maintaining the ratio but regardless the with or height */
+        border-radius: 10px;
+    }
+    .div-container{
+        /* border: 10px double red; */
+         /*TRBL*/
+        border-top: 10px solid blue;
+        border-right: 10px solid red;
+        border-bottom: 10px solid pink;
+        border-left: 10px solid yellow;
+        border-radius: 30px;
+    }
+</style>
+<body>
+    <div class="div-image">
+        <h1>Header</h1>
+       <p>Paragraph</p>
+       <label>Detail: </label><input placeholder="info"/>
+       <p id="description">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, aliquam. Repudiandae ab deserunt, minus quia est repellat optio obcaecati suscipit perspiciatis voluptas commodi architecto, vel reprehenderit non quaerat, asperiores porro!</p>
+    </div>
+    <div class="visual div-container">
+        <h1>Header 2</h1>
+       <p>Paragraph</p>
+       <label>Detail: </label><input placeholder="info"/>
+       <p class="visual-two">
+            Hello from Samuel
+       </p>
+    </div>
+</body>
+</html>
